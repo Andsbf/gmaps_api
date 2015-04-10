@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <title>Simple markers</title>
+
+    <style>
+      html, body, .container{ width: 100%; padding: 0px; }
+      .location, ul{list-style: none}
+      #map-canvas { height: 400px; width: 100%; margin: 0px; padding: 0px }
+    </style>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+    <script src='gmap.js'></script>
+    <script src="application.js"></script>
+  </head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">faVP</a>
+        </div>
+      </div>
+    </nav>
+
+    <div styl class="container">
+      <div class="starter-template" style="padding-bottom: 5px">
+        <h1>faVorite Places</h1>
+        <p class="lead">Find what you like around you!</p>
+      </div>
+      <div id="map-canvas"></div>
+      <div id='my_places'>
+        <ul>
+          <li  class='location' data-lat='49.281253' data-lng='-123.1072436'><input type="checkbox" checked>McDonalds</input></li>
+          <li class='location' data-lat='49.2826948' data-lng='-123.1065516'><input type="checkbox" checked>Blarney Stone</input></li>
+          <li class='location' data-lat='49.2856907' data-lng='-123.1034386'><input type="checkbox" checked>Crab Park</input></li>
+        </ul>
+      </div>
+    </div><!-- /.container -->
+  </body>
+</html>
